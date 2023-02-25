@@ -1,3 +1,9 @@
+:root {
+  --text-heading-color: #5ca5a5;
+  --text-color: #7c8f8f;
+  --black-color: #2b3939;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +23,12 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #000;
+  font-family: "Spartan", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: #f2f2f2;
+  color: var(--black-color);
 }
 
 img {
@@ -33,7 +40,15 @@ img {
 /* CONTAINER  */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1190px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* MAIN-CONTENT */
+.main-content {
+  flex-grow: 1;
 }
