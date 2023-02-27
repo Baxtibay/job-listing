@@ -52,3 +52,15 @@ img {
 .main-content {
   flex-grow: 1;
 }
+
+
+/* HEADER */
+.site-header {
+  height: 156px;
+  background-color: var(--text-heading-color);
+  background-image:
+    url("../img/combined-shape-left.svg"),
+    url("../img/combined-shape-right.svg");
+  background-repeat: no-repeat;
+  background-position: left -140px bottom 0px, top -58px right -98px;
+}
