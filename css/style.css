@@ -27,7 +27,7 @@ body {
   font-size: 15px;
   font-weight: 500;
   line-height: 24px;
-  background-color: #f2f2f2;
+  background-color: #fafafa;
   color: var(--black-color);
 }
 
@@ -56,11 +56,151 @@ img {
 
 /* HEADER */
 .site-header {
-  height: 156px;
+  min-height: 156px;
   background-color: var(--text-heading-color);
   background-image:
     url("../img/combined-shape-left.svg"),
     url("../img/combined-shape-right.svg");
   background-repeat: no-repeat;
   background-position: left -140px bottom 0px, top -58px right -98px;
+}
+
+
+/* USER */
+.user-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 74px;
+  margin-bottom: 120px;
+  list-style: none;
+}
+
+.user-item {
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.user-item-border {
+  border-left: 4px solid var(--text-heading-color);
+}
+
+.user-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-logo-img {
+  margin-right: 24px;
+}
+
+.logo-texts {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: auto;
+}
+
+.logo-text {
+  padding-right: 16px;
+  color: var(--text-heading-color);
+}
+
+.user-status {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.user-status span:nth-child(1) {
+  padding: 6px 8px 4px;
+  color: #fff;
+  border-radius: 12px;
+  background-color: var(--text-heading-color);
+}
+
+.user-status span:nth-child(2) {
+  padding: 6px 8px 4px;
+  color: #fff;
+  border-radius: 12px;
+  background-color: var(--black-color);
+}
+
+.user-status span:not(:last-child) {
+  margin-right: 8px;
+}
+
+.user {
+  margin-bottom: 8px;
+}
+
+.user-link {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.work-status-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: var(--text-color);
+}
+
+.work-status-item {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.12px;
+}
+
+.work-status-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.work-status-item:not(:first-child)::before {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 2.5px;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: var(--text-color);
+  content: "";
+}
+
+.soft-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.soft-skills-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.soft-skills-link {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-heading-color);
+  background-color: #EFF7F7;
 }
