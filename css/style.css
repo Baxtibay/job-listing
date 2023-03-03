@@ -1,7 +1,9 @@
 :root {
-  --text-heading-color: #5ca5a5;
-  --text-color: #7c8f8f;
-  --black-color: #2b3939;
+  --body-bg: #effafa;
+  --light-green: rgba(92, 165, 165, 0.1);
+  --green: #5ca5a5;
+  --darkgreen: #7c8f8f;
+  --black: #2b3939;
 }
 
 /* GLOBAL */
@@ -24,11 +26,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Spartan", "Arial", sans-serif;
+  font-weight: bold;
   font-size: 15px;
-  font-weight: 500;
   line-height: 24px;
   background-color: #fafafa;
-  color: var(--black-color);
+  color: var(--black);
 }
 
 img {
@@ -40,9 +42,9 @@ img {
 /* CONTAINER  */
 .container {
   width: 100%;
-  max-width: 1190px;
-  padding-left: 40px;
-  padding-right: 40px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,7 +59,7 @@ img {
 /* HEADER */
 .site-header {
   min-height: 156px;
-  background-color: var(--text-heading-color);
+  background-color: var(--green);
   background-image:
     url("../img/combined-shape-left.svg"),
     url("../img/combined-shape-right.svg");
@@ -86,7 +88,7 @@ img {
 }
 
 .user-item-border {
-  border-left: 4px solid var(--text-heading-color);
+  border-left: 4px solid var(--green);
 }
 
 .user-item:not(:last-child) {
@@ -113,7 +115,7 @@ img {
 
 .logo-text {
   padding-right: 16px;
-  color: var(--text-heading-color);
+  color: var(--green);
 }
 
 .user-status {
@@ -127,14 +129,14 @@ img {
   padding: 6px 8px 4px;
   color: #fff;
   border-radius: 12px;
-  background-color: var(--text-heading-color);
+  background-color: var(--green);
 }
 
 .user-status span:nth-child(2) {
   padding: 6px 8px 4px;
   color: #fff;
   border-radius: 12px;
-  background-color: var(--black-color);
+  background-color: var(--black);
 }
 
 .user-status span:not(:last-child) {
@@ -150,12 +152,12 @@ img {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
-  color: var(--black-color);
+  color: var(--black);
   transition: color .4s ease;
 }
 
 .user-link:hover {
-  color: var(--text-heading-color);
+  color: var(--green);
 }
 
 .work-status-list {
@@ -164,7 +166,7 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  color: var(--text-color);
+  color: var(--darkgreen);
 }
 
 .work-status-item {
@@ -185,7 +187,7 @@ img {
   border-radius: 50%;
   width: 4px;
   height: 4px;
-  background-color: var(--text-color);
+  background-color: var(--darkgreen);
   content: "";
 }
 
@@ -206,13 +208,13 @@ img {
   padding: 4px 8px;
   border-radius: 4px;
   text-decoration: none;
-  color: var(--text-heading-color);
+  color: var(--green);
   background-color: #EFF7F7;
 }
 
 .soft-skills-link:hover {
   color: #fff;
-  background-color: var(--text-heading-color);
+  background-color: var(--green);
 }
 
 
@@ -226,7 +228,7 @@ img {
   position: absolute;
   top: 120px;
   border-radius: 5px;
-  color: var(--text-heading-color);
+  color: var(--green);
   background-color: #fff;
   box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
 }
@@ -259,7 +261,7 @@ img {
   padding: 9px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  background-color: var(--text-heading-color);
+  background-color: var(--green);
 }
 
 .close-svg:hover {
@@ -267,7 +269,7 @@ img {
 }
 
 .close-svg:active {
-  background-color: var(--black-color);
+  background-color: var(--black);
 }
 
 .skills-item:not(:last-child) {
@@ -279,16 +281,16 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: var(--text-heading-color);
+  background-color: var(--green);
 }
 
 .clear-btn {
   display: flex;
   text-decoration: none;
-  color: var(--text-heading-color);
+  color: var(--green);
 }
 
 .clear-btn:hover {
   text-decoration: underline;
-  text-decoration-color: var(--text-heading-color);
+  text-decoration-color: var(--green);
 }
